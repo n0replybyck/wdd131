@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan</title>
+    <meta
+      name="description"
+      content="Learn more about Japan, the amazing culture and landscapes"
+    />
+    <meta name="author" content="Daniel Canek Rosales Rosas" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Japan 🇯🇵</h1>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source srcset="images/hero-large.webp" media="(min-width: 1000px)" />
+          <img
+            src="images/hero-small.webp"
+            alt="The Japanese culture is rich and diverse"
+            width="600"
+            height="400"
+          />
+        </picture>
+        <div class="data-overlay">
+          <h2>Data</h2>
+          <p>Area: 377,975 km²</p>
+          <p>Population: 123.1 Million</p>
+          <p>Capital: Tokyo</p>
+          <p>Languages: Japanese</p>
+          <p>Currency: Japanese Yen (JPY)</p>
+          <p>Time Zone: JST (UTC+9)</p>
+          <p>Calling Code: +81</p>
+          <p>Internet TLD: .jp</p>
+        </div>
+        <section class="weather">
+          <h2>Weather</h2>
+          <div class="weather-icon-container">
+            <img
+              src="images/weather.svg"
+              alt="Partly Cloudy"
+              class="weather-icon"
+            />
+          </div>
+          <p>Temperature: <span id="temp">28</span>°C</p>
+          <p>Conditions: Partly Cloudy</p>
+          <p>Wind: <span id="wind">15</span> km/h</p>
+          <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> | Daniel Canek Rosales Rosas | WDD 131 | BYU-Idaho | Japan 🇯🇵 <span id="current-date"></span>
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
