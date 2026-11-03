@@ -143,10 +143,6 @@ main {
     font-size: 1rem;
 }
 
-.location h3 {
-
-}
-
 .location-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -168,7 +164,7 @@ aside {
     list-style: none;
     padding: 20px;
     margin-top: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 15px;
 }
