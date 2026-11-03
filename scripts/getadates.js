@@ -2,4 +2,4 @@ const year = document.querySelector("#currentyear");
 const today = new Date();
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
-document.getElementById("lastmodified").textContent = document.lastModified;
+document.getElementById("lastModified").textContent = document.lastModified;
