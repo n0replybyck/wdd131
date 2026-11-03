@@ -21,8 +21,7 @@ body {
     color: var(--prussian-blue)
 }
 
-header,
-footer {
+header {
     width: auto;
     margin: 0 auto;
 }
@@ -191,6 +190,7 @@ footer {
     background-color: var(--prussian-blue);
     color: var(--white);
     text-align: center;
+    width: auto;
     padding: 1rem;
 }
 
