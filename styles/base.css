@@ -1,0 +1,204 @@
+:root {
+    --heading-font: 'Redaction 35', san-serif;
+    --body-font: 'JetBrains Mono', monospace;
+
+    --black: #000000ff;
+    --prussian-blue: #14213dff;
+    --orange: #fca311ff;
+    --alabaster-grey: #e5e5e5ff;
+    --white: #ffffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--alabaster-grey);
+    font-family: var(--body-font), sans-serif;
+    color: var(--prussian-blue)
+}
+
+header,
+footer {
+    width: auto;
+    margin: 0 auto;
+}
+
+/* This section is for the heather */
+
+#course-title {
+    display: block;
+    font-family: var(--heading-font), serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--black)
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--prussian-blue);
+}
+
+.nav-links {
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+    background-color: var(--black);
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links a:active {
+    color: var(--orange);
+    background-color: var(--black);
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Main space */
+
+h1 {
+    font-family: var(--heading-font), serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: var(--prussian-blue);
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.card h2 {
+    color: var(--black);
+    background-color: var(--orange);
+    font-family: var(--heading-font), serif;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--black);
+}
+
+.card {
+    color: var(--prussian-blue);
+    background-color: var(--white);
+}
+
+.media img {
+    width: 300px;
+    height: auto;
+}
+
+.media figcaption {
+    color: var(--black);
+    font-style: italic;
+    padding: 5px;
+    gap: 10px;
+    text-align: center;
+
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    color: var(--prussian-blue);
+    font-size: 1rem;
+}
+
+.location h3 {
+
+}
+
+.location-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid var(--black);
+}
+
+.location-section p {
+    font-size: 1rem;
+}
+
+aside {
+    text-align: center;
+}
+
+.links {
+    list-style: none;
+    padding: 20px;
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links a {
+    display: block;
+    padding: 12px;
+    background-color: var(--prussian-blue);
+    color: var(--white);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.links a:hover {
+    background-color: var(--orange);
+    color: var(--black);
+    transform: translateY(-2px);
+    font-weight: bold;
+
+}
+
+footer {
+    background-color: var(--prussian-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer:hover {
+    background-color: var(--orange);
+    color: var(--black);
+    font-weight: bold;
+}
